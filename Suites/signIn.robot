@@ -2,12 +2,12 @@
 
 Library    AppiumLibrary
 Resource    ../PageObjects/HomePage/homePage.robot
-Resource    ../PageObjects/LoginPage/loginPage.robot
+Resource    ../PageObjects/SignInPage/signInPage.robot
 Resource    ../PageObjects/base.robot
 Test Setup    Run Keywords    Open Flight Application    AND    
 ...    Verify Home Screen    AND    
 ...    Click Sign In Button    AND    
-...    Verify Login Screen
+...    Verify Sign In Screen
 #Suite Setup
 Test Teardown    Close Flight Application
 #Suite Teardown
@@ -33,7 +33,7 @@ User should be able to login with valid data
     Input Username    username=support@ngendigital.com
     Input Password    password=abc123
     Click Sign In Button on Login Screen
-    Verify User Successfully Login
+    Verify User Successfully Sign In
 
 User should be able to login with invalid username
     Input Username    username=support

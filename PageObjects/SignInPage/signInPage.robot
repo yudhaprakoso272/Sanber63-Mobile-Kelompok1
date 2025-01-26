@@ -6,7 +6,7 @@ Resource    ../base.robot
 
 *** Keywords ***
 
-Verify Login Screen
+Verify Sign In Screen
     Wait Until Element Is Visible    locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textView2"]
 
 Input Username
@@ -20,8 +20,8 @@ Input Password
 Click Sign In Button on Login Screen
     Click Element    locator=//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
 
-Verify User Successfully Login
+Verify User Successfully Sign In
     Wait Until Element Is Visible    locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]
 
-# Verify User Failed Login
+# Verify User Failed Sign In
 #     Wait Until Element Is Visible    locator=//android.widget.Toast[@text="Invalid username/password"]
