@@ -37,7 +37,6 @@ Test Teardown    Close Flight Application
 # Click London
 # Close Application
 
-
 *** Test Cases ***
 
 ##ONE WAY
@@ -80,6 +79,19 @@ User Succeed book Flight without start date and end date
     Click Class
     Click Economy
     Click Flight
+    Click Book Flight Button
+    Verify Book Flight Screen Appears
+    Click On The Price To Confirm
+    Cick Confirm Button
+    System Shown "your flight is booked.Reservation number is CADX2214"
+
+User Succeed book Flight without Choose anything
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Book Button
+    Verify Book Screen Appears
     Click Book Flight Button
     Verify Book Flight Screen Appears
     Click On The Price To Confirm
