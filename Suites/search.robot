@@ -42,6 +42,19 @@ User should be able to login with valid data and search wrong valid data
     Sleep    5s   # Menunggu 5 detik
     #Verify Invalid Flight Number Error Message  # Comment out this line
     # Verify Invalid Flight Number Error Message
+
+User should be able to login with valid data and search empty data
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Search
+    Verify Search Page
+    Input Flight Number      ..
+    Click Button Search In Search Page
+    Sleep    5s   # Menunggu 5 detik
+    #Verify Invalid Flight Number Error Message  # Comment out this line
+    # Verify Invalid Flight Number Error Message
     
 
 
