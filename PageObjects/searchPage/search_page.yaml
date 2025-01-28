@@ -1,0 +1,4 @@
+app_verify_search_page: //android.widget.TextView[@resource-id="com.example.myapplication:id/enterFlight"]
+app_input_flight_number: //android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]
+app_click_search_button: ///android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+app_verify_search_success: //android.widget.TextView[@text="Toronto to Paris"]
