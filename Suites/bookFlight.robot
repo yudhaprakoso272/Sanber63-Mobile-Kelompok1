@@ -63,3 +63,27 @@ User should be able to login with valid data and Succeed book Flight
     Click On The Price To Confirm
     Cick Confirm Button
     System Shown "your flight is booked.Reservation number is CADX2214"
+
+User should be able to login with valid data and Succeed book Flight
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Book Button
+    Verify Book Screen Appears
+    Click One Way
+    Click From City
+    Click NewYork
+    Click To City
+    Click London
+    Click Class
+    Click Economy
+    User Choose Start Date
+    Click Date
+    User Choose End Date
+    Click Flight
+    Click Book Flight Button
+    Verify Book Flight Screen Appears
+    Click On The Price To Confirm
+    Cick Confirm Button
+    System Shown "your flight is booked.Reservation number is CADX2214"
