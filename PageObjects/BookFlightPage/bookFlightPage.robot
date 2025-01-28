@@ -16,6 +16,9 @@ Verify Book Screen Appears
 Click One Way
         Click Element        locator=//android.widget.TextView[@text="ONE WAY"]
 
+Click Round Trip
+        Click Element    locator=//android.support.v7.app.ActionBar.Tab[@content-desc="Round Trip"]
+
 Click From City
         Wait Until Element Is Visible    locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
         Click Element        locator=//android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]

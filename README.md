@@ -1,6 +1,9 @@
 ## Sanber63-Mobile-Kelompok1
 ## Team 1 - Mobile Robot FrameWork Quiz 3
 
+Test Case : 
+[Spreadsheets](https://docs.google.com/spreadsheets/d/1CVSGo0CWVpZxjygDOjxgsrqYeqw9EETNmWcWSMX1utc/edit?usp=sharing)
+
 POC of Tasks:
 1. Sign In : Aliffrianto Yudha Prakoso
 2. Book Flight : Firman

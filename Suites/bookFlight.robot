@@ -40,6 +40,7 @@ Test Teardown    Close Flight Application
 
 *** Test Cases ***
 
+##ONE WAY
 User should be able to login with valid data and Succeed book Flight
     Input Username    username=support@ngendigital.com
     Input Password    password=abc123
@@ -107,3 +108,74 @@ User Succeed book Flight without Flight, flight+hotel, and +/- 1 Day
     Click On The Price To Confirm
     Cick Confirm Button
     System Shown "your flight is booked.Reservation number is CADX2214"
+
+    ##ROUND TRIP 
+User should be able to login with valid data and Succeed book Flight    
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Book Button
+    Verify Book Screen Appears
+    Click Round Trip
+    Click From City
+    Click NewYork
+    Click To City
+    Click London
+    Click Class
+    Click Economy
+    User Choose Start Date
+    Click Date
+    User Choose End Date
+    Click Flight
+    Click Book Flight Button
+    Verify Book Flight Screen Appears
+    Click On The Price To Confirm
+    Cick Confirm Button
+    System Shown "your flight is booked.Reservation number is CADX2214"
+
+User Succeed book Flight without start date and end date
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Book Button
+    Verify Book Screen Appears
+    Click Round Trip
+    Click From City
+    Click NewYork
+    Click To City
+    Click London
+    Click Class
+    Click Economy
+    Click Flight
+    Click Book Flight Button
+    Verify Book Flight Screen Appears
+    Click On The Price To Confirm
+    Cick Confirm Button
+    System Shown "your flight is booked.Reservation number is CADX2214"
+
+User Succeed book Flight without Flight, flight+hotel, and +/- 1 Day
+    Input Username    username=support@ngendigital.com
+    Input Password    password=abc123
+    Click Sign In Button on Login Screen
+    Verify User Successfully Sign In
+    Click Book Button
+    Verify Book Screen Appears
+    Click Round Trip
+    Click From City
+    Click NewYork
+    Click To City
+    Click London
+    Click Class
+    Click Economy
+    User Choose Start Date
+    Click Date
+    User Choose End Date
+    Click Book Flight Button
+    Verify Book Flight Screen Appears
+    Click On The Price To Confirm
+    Cick Confirm Button
+    System Shown "your flight is booked.Reservation number is CADX2214"
+
+        
