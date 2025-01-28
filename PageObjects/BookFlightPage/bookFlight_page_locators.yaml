@@ -1,0 +1,6 @@
+app_click_OneWay:  //android.widget.TextView[@text="ONE WAY"]
+app_click_FromCity:  //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
+app_click_ToCity:  //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerTo"]
+app_click_Class:  //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]
+app_click_NewYork:   //android.widget.TextView[@resource-id="android:id/text1" and @text="New York"]
+pp_click_London:  //android.widget.TextView[@resource-id="android:id/text1" and @text="London"]
