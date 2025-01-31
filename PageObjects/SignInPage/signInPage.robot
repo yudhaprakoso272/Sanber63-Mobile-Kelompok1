@@ -23,5 +23,5 @@ Click Sign In Button on Login Screen
 Verify User Successfully Sign In
     Wait Until Element Is Visible    locator=//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]
 
-# Verify User Failed Sign In
-#     Wait Until Element Is Visible    locator=//android.widget.Toast[@text="Invalid username/password"]
+Verify User Failed SignIn
+    Wait Until Page Contains    text=Invalid username/password
